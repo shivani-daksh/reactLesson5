@@ -24,3 +24,8 @@
   border-radius: 100%;
   object-fit: cover;
 }
+.chat-message-time {
+  font-size: 14px;
+  color: rgb(125, 125, 125);
+  margin-top: 5px;
+}
