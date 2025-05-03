@@ -6,16 +6,18 @@ import './App.css'
 
 
 function App() {
+   const [chatMessages, setChatMessages] = useState([]);
+
+
+
   useEffect(() => {
     Chatbot.addResponses({
       'my name': 'shivani',
-      'my enemy' : 'karan verma'
       //here you add msg and responses in property value pair 
     });
+   }, []);
 
-  }, []);
-
-  const [chatMessages, setChatMessages] = useState([]);
+ 
 
   return (
     <div className="app-container">
